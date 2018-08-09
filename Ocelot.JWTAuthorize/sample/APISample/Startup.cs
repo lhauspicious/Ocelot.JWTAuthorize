@@ -47,7 +47,7 @@ namespace APISample
         {
             var permissions = new List<Permission>() {
                 new Permission { Name="admin", Predicate="Get", Url="/api/values" },
-                new Permission { Name="admin,system", Predicate="Post", Url="/api/values" }
+                new Permission { Name="admin", Predicate="Post", Url="/api/values" }
             };
             var questUrl = httpContext.Request.Path.Value.ToLower();
 
